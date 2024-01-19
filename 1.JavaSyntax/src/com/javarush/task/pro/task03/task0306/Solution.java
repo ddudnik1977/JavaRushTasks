@@ -16,28 +16,13 @@ public class Solution {
         int a = console.nextInt();
         int b = console.nextInt();
         int c = console.nextInt();
-        
-        if (a<(b+c)){
-            boolean triangle_exits = true;
-            System.out.println(triangle_exits);
-        } else if (a>=(b+c)) {
-            boolean triangle_not_exists =false;
-            System.out.println(triangle_not_exists);
 
-        } else if (b<(a+c)) {
-            boolean triangle_exists = true;
-            System.out.println(triangle_exists);
-        } else if (b>=(a+c)) {
-            boolean triangle_not_exists =false;
-            System.out.println(triangle_not_exists);
-
-        } else if (c<(b+a)) {
-            boolean triangle_exists = true;
-            System.out.println(triangle_exists);
-        } else if (c>=(b+a)) {
-            boolean triangle_not_exists =false;
-            System.out.println(triangle_not_exists);
+        if ((a<(b+c))&&(b<(a+c))&&(c<(a+b))) {
+            System.out.println(TRIANGLE_EXISTS);
+        } else if ((a>=(b+c))||(b>=(a+c))||(c>=(a+b))) {
+            System.out.println(TRIANGLE_NOT_EXISTS);
         }
+
 
     }
 }
