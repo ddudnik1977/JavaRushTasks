@@ -10,11 +10,14 @@ public class Solution {
         int x = 0;
         while (x < 10) {
             int y = 0;
-            while (y < 19) {
-                System.out.print((y == 0) || (x == 0) || (x == 9) ? "Б" : " ");
+            while (y < 20) {
+                if (x==0 || x==9 || y ==0 || y==19 ){
+                System.out.print("Б");}
+                else
+                    System.out.print(" ");
                 y++;
             }
-            System.out.println("Б");
+            System.out.println(" ");
             x++;
         }
 
